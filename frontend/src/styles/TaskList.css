@@ -1,0 +1,79 @@
+/* ══════════════════════════════════════
+   Endless Animated Carousel
+   ══════════════════════════════════════ */
+
+   .carousel-section {
+    margin-top: 0.5rem;
+  }
+  
+  .carousel-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* The viewport hides overflow so only a "window" of cards is visible */
+  .carousel-viewport {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 12px;
+    padding: 0.75rem 0;
+  }
+  
+  /* The track holds TWO identical sets side-by-side and slides left */
+  .carousel-track {
+    display: flex;
+    width: max-content;
+    animation: carousel-scroll linear infinite;
+  }
+  
+  /* Each set contains all the cards in a row */
+  .carousel-set {
+    display: flex;
+    gap: 1.25rem;
+    flex-shrink: 0;
+    padding-right: 1.25rem; /* gap between the two sets */
+  }
+  
+  /* Core keyframe — translates from 0 to -50% of the track
+     (which is exactly one full set), then loops seamlessly */
+  @keyframes carousel-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .carousel-hint {
+    text-align: center;
+    font-size: 0.78rem;
+    color: #94a3b8;
+    margin-top: 0.75rem;
+  }
+  
+  /* ── Empty state ── */
+  .carousel-empty {
+    text-align: center;
+    padding: 3.5rem 1rem;
+    color: #94a3b8;
+  }
+  
+  .empty-icon {
+    font-size: 2.8rem;
+    display: block;
+    margin-bottom: 0.6rem;
+  }
+  
+  .carousel-empty h2 {
+    font-size: 1.15rem;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+  }
+  
+  .carousel-empty p {
+    font-size: 0.9rem;
+  }
+  

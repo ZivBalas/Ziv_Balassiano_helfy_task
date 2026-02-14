@@ -1,0 +1,34 @@
+.filter-bar {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.75rem;
+    background: white;
+    padding: 0.4rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    width: fit-content;
+  }
+  
+  .filter-btn {
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #64748b;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .filter-btn.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+  }
+  
+  .filter-count {
+    padding: 0.45rem 1rem;
+    margin-left: 0.4rem;
+    font-size: 0.75rem;
+    opacity: 0.8;
+  }

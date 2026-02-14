@@ -1,0 +1,126 @@
+
+.task-card {
+    flex-shrink: 0;
+    width: 280px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.15rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: transform 0.25s, box-shadow 0.25s;
+    position: relative;
+  }
+  
+  .task-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Completed cards get a subtle overlay */
+  .task-card.completed {
+    opacity: 0.7;
+  }
+  
+  .task-card.completed .task-card-title {
+    text-decoration: line-through;
+    color: #94a3b8;
+  }
+  
+  /* ── Priority Badge ── */
+  .priority-badge {
+    align-self: flex-start;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+  }
+  
+  .priority-low {
+    background: #ecfdf5;
+    color: #047857;
+  }
+  
+  .priority-medium {
+    background: #fef3c7;
+    color: #92400e;
+  }
+  
+  .priority-high {
+    background: #fef2f2;
+    color: #dc2626;
+  }
+  
+  /* ── Card content ── */
+  .task-card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0f172a;
+    line-height: 1.35;
+  }
+  
+  
+  .task-card-date {
+    font-size: 0.73rem;
+    color: #94a3b8;
+    margin-top: auto;
+  }
+  
+  /* ── Action buttons row ── */
+  .task-card-actions {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid #f1f5f9;
+  }
+  
+  .task-card-actions button {
+    flex: 1;
+    padding: 0.35rem 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    transition: background 0.15s;
+  }
+  
+  .btn-toggle {
+    background: #f0fdf4;
+    color: #15803d;
+  }
+  
+  .btn-toggle:hover {
+    background: #dcfce7;
+  }
+  
+  .btn-toggle.done {
+    background: #fefce8;
+    color: #a16207;
+  }
+  
+  .btn-toggle.done:hover {
+    background: #fef9c3;
+  }
+  
+  .btn-edit {
+    background: #eff6ff;
+    color: #2563eb;
+  }
+  
+  .btn-edit:hover {
+    background: #dbeafe;
+  }
+  
+  .btn-delete {
+    background: #fef2f2;
+    color: #dc2626;
+  }
+  
+  .btn-delete:hover {
+    background: #fee2e2;
+  }
+  

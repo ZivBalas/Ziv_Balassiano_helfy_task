@@ -1,0 +1,40 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 3rem;
+  }
+  
+  .status-msg {
+    text-align: center;
+    padding: 2rem;
+    color: #64748b;
+    font-size: 1rem;
+  }
+  
+  .status-msg.error {
+    color: #dc2626;
+  }
+  
+  .add-task-btn {
+    display: block;
+    margin: 1.5rem auto 0;
+    padding: 0.6rem 1.6rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  
+  .add-task-btn:hover {
+    background-color: #1d4ed8;
+  }

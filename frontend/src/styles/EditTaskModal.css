@@ -1,0 +1,70 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* ── Modal card ── */
+  .modal-content {
+    background: white;
+    padding: 1.75rem;
+    border-radius: 12px;
+    width: 460px;
+    max-width: 90%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* ── Title ── */
+  .modal-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+  }
+  
+  /* ── Buttons row ── */
+  .modal-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .btn-save {
+    flex: 1;
+    padding: 0.6rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-save:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .btn-close {
+    flex: 1;
+    padding: 0.6rem;
+    background-color: #f1f5f9;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-close:hover {
+    background-color: #e2e8f0;
+  }
